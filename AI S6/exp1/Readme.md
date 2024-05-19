@@ -1,3 +1,7 @@
+*N-Queens problem*
+
+
+
 Create a list of all possible permutation of queen placements
 the index of list gives the row of queen and value of list gives column
 the above condition make sure no two queen share same column or row

@@ -1,4 +1,8 @@
-Use permutations from itertools module
+
+*Crypt arithmetic Problem*
+
+
+Use permutations from itertool module
 
 strategy : bruteforce
 

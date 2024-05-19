@@ -1,3 +1,8 @@
+*Water Jug Problem*
+
+
+
+
 If the gcd of of capacity of two jugs is not a mulitple of target, then we cannot measure the target using 
 the two jugs.
 
