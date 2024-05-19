@@ -3,7 +3,7 @@ jug1=int(input("Enter capacity of first jug: "))
 jug2=int(input("Enter capacity of second jug: "))
 target=int(input("Enter the target: "))
 steps=[]
-if (target>jug1 and target>jug2) or target%(math.gcd(jug1,jug2)!=0):
+if (target>jug1 and target>jug2) or target%(math.gcd(jug1,jug2))!=0:
     print("Not possible to measure")
 elif (target==jug2 or target==jug1):
     steps.append((jug1,jug2))
