@@ -1,4 +1,4 @@
-Use permutations from itertool module
+Use permutations from itertools module
 
 strategy : bruteforce
 
