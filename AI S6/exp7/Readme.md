@@ -1,6 +1,16 @@
 *A * Algorithm*
 
+
+The goal node is taken as "A"
+the destination node is taken as "F"
+
+updated code accordingly to change goal and destination nodes
+
+
 graph is taken as dictionary
+
+graph format -> {node1 : ['neighbour1', 'distance to neightbour1'],node2 : ['neighbour2', 'distance to neightbour2']}
+
 heruistic value is take as dictionary ( key is node and value is heurestic value)
 
 take initial node (start node) , distance from start node to current node( 0 first time ) and path in priority queue
