@@ -11,6 +11,6 @@ while stack:
     print(node)
     if node not in visited:
         visited.add(node)
-        for i in graph[node]:
+        for i in graph[node][::-1]:
             if i not in visited and i not in stack:
                 stack.append(i)
