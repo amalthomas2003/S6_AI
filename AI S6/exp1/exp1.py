@@ -1,33 +1,14 @@
-# N-Queens problem
-from itertools import permutations   
-n=int(input("Enter value of n"))
-final_list=[] 
-all_possible_permutations=list(permutations([i for i in range(n)]))
-for i in all_possible_permutations:
-    main_count=0
-    for j,k in enumerate(i):
-        count=0
-        for l,m in enumerate(i):
-            if j-k==l-m or j+k==l+m:
+from itertools import permutations
+n=int(input("Enter value of n : "))
+for perm in permutations([i for i in range(n)]):
+    count=0
+    for i,j in enumerate(perm):
+        for k,l in enumerate(perm):
+            if i+j==k+l or i-j==k-l:
                 count+=1
-        if count>1:
-            break
-        else:
-            main_count+=1
-    if main_count==n:
-        final_list.append(i)
-for z,i in enumerate(final_list):
-    print("Combination ",z+1,":")
-    for j in i:
-        for k in range(n):
-            print("Q" if j==k else ".",end=" ")
-        print()
-    print("\n")
-    
-        
-        
-
-
-
-
-
+    if count==n:
+        for a in range(n):
+            for b in range(n):
+                print(" Q " if perm[a]==b else " . ",end="")
+            print()
+        print("\n")
